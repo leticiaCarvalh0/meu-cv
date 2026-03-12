@@ -1,0 +1,172 @@
+/* Configurações Globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background: rgb(225, 201, 250);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+}
+
+header h2 {
+    margin: 5px 0;
+    color: #555;
+    font-weight: normal;
+}
+
+address {
+    font-style: normal;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+address a {
+    text-decoration: none;
+    color: #5a3e83;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+/* Menu de Navegação */
+nav {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #5a3e83;
+}
+
+/* Container Principal (Flexbox) */
+.container {
+    display: flex;
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main {
+    flex: 3;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    background-color: #fff;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+/* Cartões de Seção */
+section {
+    padding: 25px;
+    background-color: white;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    border-bottom: 3px solid #e1c9fa;
+    padding-bottom: 8px;
+    color: #333;
+    font-size: 1.4em;
+    margin-top: 0;
+}
+
+h4 {
+    margin: 10px 0 5px 0;
+    color: #5a3e83;
+}
+
+.item-info {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+/* Listas */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Itens de Projeto */
+.project-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.imgprojeto {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.project-desc {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #bdbccc;
+    color: #444;
+    font-size: 0.9em;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    aside {
+        margin: 20px;
+    }
+}
